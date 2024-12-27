@@ -21,7 +21,7 @@ const NavBar = () => {
             <AppBar position="absolute">
                 <StyledToolBar>
                     <MenuItem onClick={() => handleScroll("about")}>About</MenuItem>
-                    <MenuItem>Skills</MenuItem>
+                    <MenuItem onClick={() => handleScroll("skills")}>Skills</MenuItem>
                     <MenuItem onClick={() => handleScroll("projects")}>Projects</MenuItem>
                 </StyledToolBar>
             </AppBar>
