@@ -8,12 +8,19 @@ const NavBar = () => {
 
     }))
 
+    const handleScroll = (sectionId: string) => {
+        const section = document.getElementById(sectionId)
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" })
+        }
+    }
+
     return (
         <>
 
             <AppBar position="absolute">
                 <StyledToolBar>
-                    <MenuItem>About</MenuItem>
+                    <MenuItem onClick={() => handleScroll("about")}>About</MenuItem>
                     <MenuItem>Skills</MenuItem>
                     <MenuItem>Projects</MenuItem>
                 </StyledToolBar>
