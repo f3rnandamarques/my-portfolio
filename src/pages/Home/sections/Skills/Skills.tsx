@@ -1,4 +1,4 @@
-import { Container, Grid, styled, Typography } from "@mui/material"
+import { Box, Chip, Container, Grid, styled, Typography } from "@mui/material"
 
 const Skills = () => {
 
@@ -6,6 +6,14 @@ const Skills = () => {
         backgroundColor: theme.palette.primary.main,
         padding: theme.spacing(4),
         minHeight: "100vh",
+    }))
+
+    const CustomChip = styled(Chip)(({ theme }) => ({
+        margin: theme.spacing(3),
+        fontSize: '20px',
+        color: "white"
+        // display: "flex",
+
     }))
 
     return (
@@ -18,7 +26,16 @@ const Skills = () => {
                             <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Skills</Typography>
                         </Grid>
                         <Grid item xs={12} md={12}>
-                            <Typography color="primary.contrastText" variant="h2" textAlign="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Typography>
+                            <Box>
+                                <CustomChip label="HTML" color="secondary" />
+                                <CustomChip label="Angular" color="secondary" />
+                                <CustomChip label="JavaScript" color="secondary" />
+                                <CustomChip label="TypeScript" color="secondary" />
+                                <CustomChip label="React" color="secondary" />
+                                <CustomChip label="NestJs" color="secondary" />
+                                <CustomChip label="Node" color="secondary" />
+                                <CustomChip label="Git" color="secondary" />
+                            </Box>
 
                         </Grid>
                     </Grid>
