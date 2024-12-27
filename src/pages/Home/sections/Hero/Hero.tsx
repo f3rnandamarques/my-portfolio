@@ -26,6 +26,15 @@ const Hero = () => {
         border: `1px solid ${theme.palette.primary.contrastText}`
     }))
 
+    const handleDownload = () => {
+        const link = document.createElement('a')
+        link.href = '/cv.pdf'
+        link.download = 'cv.pdf' // Nome do arquivo que será baixado
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+    }
+
     return (
         <>
             <StyledHero>
@@ -47,7 +56,7 @@ const Hero = () => {
                             <Typography color="primary.contrastText" variant="h2" textAlign="center">Im a Software Engineer</Typography>
                             <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                    <StyledButton onClick={() => console.log("download")}>
+                                    <StyledButton onClick={handleDownload}>
                                         <ArrowDownwardTwoToneIcon />
                                         <Typography>Download CV</Typography>
                                     </StyledButton>
