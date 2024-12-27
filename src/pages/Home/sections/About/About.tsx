@@ -1,4 +1,4 @@
-import { Container, Grid, styled, Typography } from "@mui/material";
+import { Container, Grid, styled } from "@mui/material";
 
 
 const About = () => {
@@ -6,9 +6,22 @@ const About = () => {
     const StyledAbout = styled("div")(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
         padding: theme.spacing(4),
-        minHeight: "100vh",
+        minHeight: "60vh",
     }));
 
+    const StyledTypography = styled("div")(({ theme }) => ({
+        fontSize: "40px",
+        color: theme.palette.primary.contrastText,
+        textAlign: "center",
+        padding: theme.spacing(4)
+
+    }))
+
+    const StyledText = styled("div")(() => ({
+        fontSize: "25px",
+        textAlign: "justify",
+        color: "white"
+    }))
 
     return (
         <>
@@ -17,10 +30,12 @@ const About = () => {
                 <Container maxWidth="lg">
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={12}>
-                            <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Sobre mim</Typography>
+                            <StyledTypography>Sobre mim</StyledTypography>
                         </Grid>
                         <Grid item xs={12} md={12}>
-                            <Typography color="primary.contrastText" variant="h2" textAlign="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Typography>
+                            <StyledText >Tenho 27 anos e estou no 6º semestre de Engenharia de Computação, sempre motivado a aprender e me atualizar sobre novas tecnologias. Além dos estudos na faculdade, complemento minha formação com cursos, buscando ampliar constantemente meu conhecimento técnico.
+
+                                Em 2024, tive minha primeira experiência profissional na área de tecnologia como aprendiz na empresa de desenvolvimento Outsourcing Midukan. Essa oportunidade foi fundamental para meu crescimento, pois trabalhei com desenvolvimento FullStack,o que me permitiu adquirir habilidades práticas e aprofundar meu entendimento em ferramentas e tecnologias como Angular, NestJs, Docker, TypeScript, além de reforçar meus conhecimentos em HTML e CSS. A experiência também me ensinou a trabalhar em equipe e a lidar com desafios reais do mercado.</StyledText>
 
                         </Grid>
                     </Grid>
