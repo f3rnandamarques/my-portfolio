@@ -1,3 +1,4 @@
+import BackToTopButton from "../../components/BackToTopButton/BackToTopButton"
 import NavBar from "../../components/NavBar/NavBar"
 import About from "./sections/About/About"
 import Hero from "./sections/Hero/Hero"
@@ -14,6 +15,7 @@ const Home = () => {
             <About />
             <Skills />
             <Projects />
+            <BackToTopButton />
         </>
     )
 }
