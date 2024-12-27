@@ -1,11 +1,11 @@
-import { Box, Chip, Container, Grid, styled, Typography } from "@mui/material"
+import { Box, Chip, Container, Grid, styled } from "@mui/material"
 
 const Skills = () => {
 
     const StyledSkills = styled("div")(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
         padding: theme.spacing(4),
-        minHeight: "100vh",
+        minHeight: "60vh",
     }))
 
     const CustomChip = styled(Chip)(({ theme }) => ({
@@ -16,6 +16,14 @@ const Skills = () => {
 
     }))
 
+    const StyledTypography = styled("div")(({ theme }) => ({
+        fontSize: "40px",
+        color: theme.palette.primary.contrastText,
+        textAlign: "center",
+        padding: theme.spacing(4)
+
+    }))
+
     return (
         <>
             <StyledSkills id="skills">
@@ -23,7 +31,7 @@ const Skills = () => {
                 <Container maxWidth="lg">
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={12}>
-                            <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Skills</Typography>
+                            <StyledTypography>Skills</StyledTypography>
                         </Grid>
                         <Grid item xs={12} md={12}>
                             <Box>
@@ -35,6 +43,8 @@ const Skills = () => {
                                 <CustomChip label="NestJs" color="secondary" />
                                 <CustomChip label="Node" color="secondary" />
                                 <CustomChip label="Git" color="secondary" />
+                                <CustomChip label="Docker" color="secondary" />
+                                <CustomChip label="CSS" color="secondary" />
                             </Box>
 
                         </Grid>
