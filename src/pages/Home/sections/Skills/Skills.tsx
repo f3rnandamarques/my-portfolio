@@ -5,7 +5,7 @@ const Skills = () => {
     const StyledSkills = styled("div")(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
         padding: theme.spacing(4),
-        minHeight: "60vh",
+        minHeight: "20vh",
     }))
 
     const CustomChip = styled(Chip)(({ theme }) => ({

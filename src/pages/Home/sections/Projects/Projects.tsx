@@ -12,7 +12,6 @@ const Projects = () => {
         fontSize: "40px",
         color: theme.palette.primary.contrastText,
         textAlign: "center",
-        display: "flex",
         padding: theme.spacing(4)
 
     }))
