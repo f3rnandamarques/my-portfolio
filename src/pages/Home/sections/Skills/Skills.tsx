@@ -45,6 +45,7 @@ const Skills = () => {
                                 <CustomChip label="Git" color="secondary" />
                                 <CustomChip label="Docker" color="secondary" />
                                 <CustomChip label="CSS" color="secondary" />
+                                <CustomChip label="React" color="secondary" />
                             </Box>
 
                         </Grid>

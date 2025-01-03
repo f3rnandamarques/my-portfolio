@@ -35,7 +35,7 @@ const About = () => {
                         <Grid item xs={12} md={12}>
                             <StyledText >Tenho 27 anos e estou no 6º semestre de Engenharia de Computação, sempre motivada a aprender e me atualizar sobre novas tecnologias. Além dos estudos na faculdade, complemento minha formação com cursos, buscando ampliar constantemente meu conhecimento técnico.
 
-                                Em 2024, tive minha primeira experiência profissional na área de tecnologia como aprendiz na empresa de desenvolvimento Outsourcing Midukan. Essa oportunidade foi fundamental para meu crescimento, pois trabalhei com desenvolvimento FullStack,o que me permitiu adquirir habilidades práticas e aprofundar meu entendimento em ferramentas e tecnologias como Angular, NestJs, Docker, TypeScript, além de reforçar meus conhecimentos em HTML e CSS. A experiência também me ensinou a trabalhar em equipe e a lidar com desafios reais do mercado.</StyledText>
+                                Em 2024, tive minha primeira experiência profissional na área de tecnologia como aprendiz na empresa de desenvolvimento Outsourcing Midukan. Essa oportunidade foi fundamental para meu crescimento, pois trabalhei com desenvolvimento FullStack, o que me permitiu adquirir habilidades práticas e aprofundar meu entendimento em ferramentas e tecnologias como Angular, NestJs, Docker, TypeScript, além de reforçar meus conhecimentos em HTML e CSS. A experiência também me ensinou a trabalhar em equipe e a lidar com desafios reais do mercado.</StyledText>
 
                         </Grid>
                     </Grid>
