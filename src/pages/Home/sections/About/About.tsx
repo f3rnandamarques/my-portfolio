@@ -1,4 +1,4 @@
-import { Container, Grid, styled } from "@mui/material";
+import { Container, Grid, Paper, styled } from "@mui/material";
 
 
 const About = () => {
@@ -23,6 +23,13 @@ const About = () => {
         color: "white"
     }))
 
+    const StyledPaper = styled(Paper)(({ theme }) => ({
+        padding: theme.spacing(3),
+        textAlign: "center",
+        backgroundColor: theme.palette.primary.light,
+        color: theme.palette.primary.contrastText,
+    }))
+
     return (
         <>
             <StyledAbout id="about">
@@ -31,6 +38,29 @@ const About = () => {
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={12}>
                             <StyledTypography>Sobre mim</StyledTypography>
+                        </Grid>
+                        <Grid
+                            container
+                            spacing={4}
+                            justifyContent="center"
+                            alignItems="center"
+                            marginBottom={10}
+                            fontFamily={"sans-serif"}
+                        >
+                            <Grid item xs={12} md={3}>
+                                <StyledPaper elevation={3} sx={{ padding: 1, maxHeight: "150px" }}>
+                                    <h4>Experiência</h4>
+                                    <p>1+ anos</p>
+                                    <p>FullStack Development</p>
+                                </StyledPaper>
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <StyledPaper elevation={3} sx={{ padding: 1, maxHeight: "150px" }}>
+                                    <h4>Educação</h4>
+                                    <p>Bachelor's Degree</p>
+                                    <p>Engenharia de Computação</p>
+                                </StyledPaper>
+                            </Grid>
                         </Grid>
                         <Grid item xs={12} md={12}>
                             <StyledText >Tenho 27 anos e estou no 6º semestre de Engenharia de Computação, sempre motivada a aprender e me atualizar sobre novas tecnologias. Além dos estudos na faculdade, complemento minha formação com cursos, buscando ampliar constantemente meu conhecimento técnico.
@@ -41,7 +71,7 @@ const About = () => {
                     </Grid>
                 </Container>
 
-            </StyledAbout>
+            </StyledAbout >
         </>
     )
 }
