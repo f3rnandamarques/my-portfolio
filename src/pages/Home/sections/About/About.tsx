@@ -44,21 +44,21 @@ const About = () => {
                             spacing={4}
                             justifyContent="center"
                             alignItems="center"
-                            marginBottom={10}
+                            marginBottom={5}
                             fontFamily={"sans-serif"}
                         >
                             <Grid item xs={12} md={3}>
                                 <StyledPaper elevation={3} sx={{ padding: 1, maxHeight: "150px" }}>
                                     <h4>Experiência</h4>
-                                    <p>1+ anos</p>
-                                    <p>FullStack Development</p>
+                                    <div>1+ anos</div>
+                                    <div>FullStack Development</div>
                                 </StyledPaper>
                             </Grid>
                             <Grid item xs={12} md={3}>
                                 <StyledPaper elevation={3} sx={{ padding: 1, maxHeight: "150px" }}>
                                     <h4>Educação</h4>
-                                    <p>Bachelor's Degree</p>
-                                    <p>Engenharia de Computação</p>
+                                    <div>Bachelor's Degree</div>
+                                    <div>Engenharia de Computação</div>
                                 </StyledPaper>
                             </Grid>
                         </Grid>
